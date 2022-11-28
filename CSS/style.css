@@ -84,8 +84,29 @@ header{
 section {
     padding-top: 3rem;
 }
+.flex{
+    display: flex;
+    flex-direction: row;
+}
 .photo{
     height: 25rem;
     width: 50%;
     border-radius: 0% 0% 70px 0%;
 }
+#slogan{
+    height:500px;
+    background-color:red;font-size:36px
+}
+.parallax {
+    /* The image used */
+    background-image: url(/images/Ithaa-Restaurant4.jpg);
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
