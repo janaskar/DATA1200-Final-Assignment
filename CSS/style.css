@@ -80,3 +80,12 @@ header{
         font-size: 2.6rem;
     }
 }
+
+section {
+    padding-top: 3rem;
+}
+.photo{
+    height: 25rem;
+    width: 50%;
+    border-radius: 0% 0% 70px 0%;
+}
