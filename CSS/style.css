@@ -28,6 +28,7 @@ html{
     font-size: 2rem;
 }
 header{
+    z-index: 1;
     position: fixed;
     padding: 0 1rem;
     height: 3rem;
@@ -79,6 +80,9 @@ header{
         display: block;
         font-size: 2.6rem;
     }
+    .parallax {
+        background-attachment: scroll;
+      }
 }
 
 section {
@@ -94,8 +98,19 @@ section {
     border-radius: 0% 0% 70px 0%;
 }
 #slogan{
-    height:500px;
-    background-color:red;font-size:36px
+    color: var(--text-primary);
+    font-size: 4.5rem;
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#slogBox{
+    height: 500px;
+    background-color:var(--bg-fixed);
+    text-align: center;
+    position: relative;
 }
 .parallax {
     /* The image used */
@@ -109,4 +124,26 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
+#starBox{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.starLarge{
+    font-size: 2rem !important;
+}
+.starLarger{
+    font-size: 2.5rem !important;
+}
+#starLargest{
+    font-size: 3rem !important;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 200,
+  'opsz' 48
+}
