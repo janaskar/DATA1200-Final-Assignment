@@ -33,7 +33,7 @@ li{
 }
 header{
     position: fixed;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     height: 5rem;
     width: 100%;
     box-sizing: border-box;
