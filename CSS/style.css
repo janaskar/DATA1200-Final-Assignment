@@ -27,11 +27,9 @@ li{
     list-style: none;
 }
 /*Style Skeleton*/
-.logo{
-    font-size: 3rem;
-    user-select: none;
-}
+/*Style Header*/
 header{
+    z-index: 1;
     position: fixed;
     padding: 0 1.5rem;
     height: 5rem;
@@ -42,6 +40,18 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: var(--bg-header);
+}
+.logo{
+    font-size: 3rem;
+    user-select: none;
+}
+#btn-nav, .tri, .x{
+    display: none;
+    height: 2.5rem;
+}
+.menu-btn{
+    font-size: 2.5rem !important;
+    user-select: none;
 }
 .nav-list{
     width: 60rem;
@@ -58,16 +68,10 @@ header{
     font-size: 2rem;
     user-select: none;
 }
-.logo:hover, .nav-link:hover, .menu:hover{
+.logo:hover, .nav-link:hover, .menu-btn:hover{
     color: var(--text-hover);
 }
-.menu{
-    font-size: 2.5rem !important;
-}
-#btn-nav, .btn{
-    display: none;
-    user-select: none;
-}
+/*Style Section*/
 section{
     padding-top: 5rem;
     min-height: calc(100vh - 11.5rem);
@@ -76,6 +80,7 @@ section{
     background-position: bottom;
     background-size: 100%;
 }
+/*Style Footer*/
 footer{
     padding: 1.5rem;
     height: 3.5rem;
@@ -85,12 +90,12 @@ footer{
     align-items: center;
     background-color: var(--bg-footer);
  }
- .socials{
+ .socials-div{
     width: 10rem;
     display: flex;
     justify-content: space-between;
  }
-.fa{
+.socials{
     padding: .5rem;
     height: 1rem;
     width: 1rem;
@@ -99,18 +104,24 @@ footer{
     background: var(--text-primary);
     color: var(--bg-footer);
 }
-.fa:hover{
+.socials:hover{
     background-color: var(--text-hover);
 }
-
-/*min-width: 600px*/
-@media only screen and (max-width: 1200px) {
+/*min-width: 600px header*/
+@media only screen and (max-width: 1200px){
     .nav-list{
         display: none;
     }
-    #btn-nav:checked ~ .nav-list{
+    #btn-nav:not(:checked) ~ .tri{
+        display: block;
+    }
+    #btn-nav:checked ~ .x{
+        display: block;
+    }
+    .nav-list{
+        z-index: -1;
         position: fixed;
-        top: 5rem;
+        top: -29rem;
         left: calc(50%);
         transform: translate(-50%);
         padding: 1.5rem;
@@ -120,22 +131,21 @@ footer{
         flex-direction: column;
         background-color: var(--bg-header);
         opacity: .9;
+        transition: all .5s ease-out;
     }
-    #btn-nav:checked ~ .tri{
-        display: none;
+    #btn-nav:checked ~ .nav-list{
+        top: 5rem;
+        transition: all .5s ease-in;
     }
-    #btn-nav:not(:checked) ~ .x{
-        display: none;
-    }
-    .btn, .nav-link{
+    .nav-link{
         display: block;
         cursor: pointer;
         height: 2.5rem;
         font-size: 2.5rem;
-
     }
 }
-@media only screen and (max-width: 480px) {
+/*min-width: 480px footerer*/
+@media only screen and (max-width: 480px){
     footer{
         height: 7rem;
         flex-direction: column;
