@@ -11,6 +11,7 @@
     --text-primary: gainsboro;
     --text-hover: gray;
     --bg-header: #282828;
+    --bg-nav: #303030;
     --bg-secondary: linear-gradient(DodgerBlue, darkblue);
     --bg-footer: #000030;
     font-size: 16px;
@@ -18,7 +19,6 @@
 }
 html{
     scroll-behavior: smooth;
-    background: var(--bg-secondary);
 }
 ::-webkit-scrollbar{
     display: none;
@@ -28,12 +28,14 @@ li{
 }
 /*Style Skeleton*/
 /*Style Header*/
+my-header{
+    position: fixed;
+    width: 100%;
+}
 header{
     z-index: 1;
-    position: fixed;
     padding: 0 1.5rem;
     height: 5rem;
-    width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -52,6 +54,7 @@ header{
 .menu-btn{
     font-size: 2.5rem !important;
     user-select: none;
+    cursor: pointer;
 }
 .nav-list{
     width: 60rem;
@@ -75,7 +78,8 @@ header{
 section{
     padding-top: 5rem;
     min-height: calc(100vh - 11.5rem);
-    background-image: url(../img/footer-bg.svg);
+    background: url(../img/footer-bg.svg),
+                var(--bg-secondary);
     Background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
@@ -120,7 +124,7 @@ footer{
     }
     .nav-list{
         z-index: -1;
-        position: fixed;
+        position: absolute;
         top: -29rem;
         left: calc(50%);
         transform: translate(-50%);
@@ -129,17 +133,19 @@ footer{
         width: 100%;
         display: flex;
         flex-direction: column;
-        background-color: var(--bg-header);
-        opacity: .9;
+        background-color: var(--bg-nav);
         transition: all .5s ease-out;
     }
     #btn-nav:checked ~ .nav-list{
         top: 5rem;
         transition: all .5s ease-in;
+        transition-property: top;
+    }
+    #btn-nav:checked ~ section{
+        padding-top: 10rem;
     }
     .nav-link{
         display: block;
-        cursor: pointer;
         height: 2.5rem;
         font-size: 2.5rem;
     }
