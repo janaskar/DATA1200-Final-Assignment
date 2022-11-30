@@ -3,7 +3,7 @@ class MyHeader extends HTMLElement {
         this.innerHTML = `
             <header>
                 <!--Logo-->
-                <a class="logo" href="..">CXXIII</a>
+                <a class="logo" href="..">Anchr</a>
                 <nav>
                     <!--Hidden btn-->
                     <input type="checkbox" id="btn-nav">
@@ -43,9 +43,9 @@ class MyFooter extends HTMLElement {
         this.innerHTML = `
             <footer>
                 <div>
-                    <p>Copyright © 2022 by CXXIII Data.</p>
+                    <p>Copyright © 2022 by CXXIII.</p>
                     <p>Rights Reserved.</p>
-                    <p>CXXIII is Powered by GitHub.</p>
+                    <p>Anchr is Powered by GitHub.</p>
                 </div>
                 <div class="socials-div">
                     <a href="https://www.facebook.com" class="fa fa-facebook socials"></a>
