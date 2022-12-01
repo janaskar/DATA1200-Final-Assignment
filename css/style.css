@@ -88,7 +88,7 @@ header{
     transition: all .5s ease-in-out;
 }
 /*Style Section*/
-section{
+.main{
     margin-top : 5rem;
     min-height: calc(100vh - 11.5rem);
     background: url(../img/footer-bg.svg),
