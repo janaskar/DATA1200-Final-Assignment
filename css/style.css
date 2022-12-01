@@ -38,12 +38,13 @@ li{
 /*Style Skeleton*/
 /*Style Header*/
 my-header{
+    z-index: 10;
     position: fixed;
     top: 0px;
     width: 100%;
 }
 header{
-    z-index: 1;
+    
     padding: 0 1.5rem;
     height: 5rem;
     box-sizing: border-box;
@@ -89,7 +90,7 @@ header{
 }
 /*Style Section*/
 .main{
-    margin-top : 5rem;
+    padding-top: 5rem;
     min-height: calc(100vh - 11.5rem);
     background: url(../img/footer-bg.svg),
                 var(--bg-secondary);
