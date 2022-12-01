@@ -31,7 +31,7 @@ li{
     font-family: waves;
     src: url(../fonts/waves.ttf) format("truetype");
 }
-@font-face {
+@font-face{
     font-family: archive;
     src: url(../fonts/archive.ttf) format("truetype");
 }
@@ -83,9 +83,12 @@ header{
     font-family: waves;
     user-select: none;
 }
-.logo:hover, .nav-link:hover, .menu-btn:hover{
+.logo, .menu-btn, .nav-link{
+    transition: color .5s ease-in-out;
+}
+.logo:hover, .menu-btn:hover, .nav-link:hover{
     color: var(--text-hover);
-    transition: all .5s ease-in-out;
+    transition: color .5s ease-in-out;
 }
 /*Style Section*/
 .main{
@@ -120,10 +123,11 @@ footer{
     border-radius: 50%;
     background: var(--text-primary);
     color: var(--bg-footer);
+    transition: background-color .5s ease-in-out;
 }
 .socials:hover{
     background-color: var(--text-hover);
-    transition: all .5s ease-in-out;
+    transition: background-color .5s ease-in-out;
 }
 /*min-width: 600px header*/
 @media only screen and (max-width: 1200px){
