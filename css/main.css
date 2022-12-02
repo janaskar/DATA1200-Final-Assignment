@@ -8,26 +8,30 @@
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
+body, html{
+    height: 100%;
+}
 #slogan{
     z-index: 1;
     color: var(--text-primary);
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-family: 'Pacifico', cursive;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 #slogBox{
     z-index: 1;
-    height: 450px;
+    height: 34%;    
     background-color:var(--bg-header);
     text-align: center;
     position: relative;
+    user-select: none;
 }
-.parallax {
+.parallax{
     /* The image used */
-    background-image: url(/img/cruise\ ship.jpg);
+    background-image: url(../img/parallax.svg);
   
     /* Full height */
     height: 33%; 
@@ -44,6 +48,7 @@
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
+    user-select: none;
 }
 .starLarge{
     font-size: 2rem !important;
@@ -53,11 +58,4 @@
 }
 #starLargest{
     font-size: 3rem !important;
-}
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 200,
-  'opsz' 48
 }
