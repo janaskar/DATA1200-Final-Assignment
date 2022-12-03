@@ -17,7 +17,8 @@
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
-html{
+body, html{
+    height: 100%;
     scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
@@ -44,7 +45,6 @@ my-header{
     width: 100%;
 }
 header{
-    
     padding: 0 1.5rem;
     height: 5rem;
     box-sizing: border-box;
@@ -91,9 +91,17 @@ header{
     color: var(--text-hover);
     transition: color .5s ease-in-out;
 }
+/*Style Icon*/
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 200,
+    'opsz' 48
+  }
 /*Style Section*/
 .main{
-    padding-top: 5rem;
+    padding: 12rem 7rem 15rem 7rem;
     min-height: calc(100vh - 11.5rem);
     background: url(../img/footer-bg.svg),
                 var(--bg-secondary);
@@ -168,12 +176,18 @@ footer{
         height: 2.5rem;
         font-size: 2.5rem;
     }
+    .main{
+        padding: 7rem 2rem;
+    }
 }
 /*min-width: 480px footerer*/
 @media only screen and (max-width: 480px){
+    .main{
+        padding: 5rem 0rem;
+    }
     footer{
         height: 7rem;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .main{
         padding-top: 1rem;
