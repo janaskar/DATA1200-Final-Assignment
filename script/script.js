@@ -45,7 +45,7 @@ class MyFooter extends HTMLElement {
                 <div>
                     <p>Copyright © 2022 by CXXIII.</p>
                     <p>Rights Reserved.</p>
-                    <p>Anchr is Powered by GitHub.</p>
+                    <p>Anchr is Powered by Cloudflare.</p>
                 </div>
                 <div class="socials-div">
                     <a href="https://www.facebook.com" class="fa fa-facebook socials"></a>
