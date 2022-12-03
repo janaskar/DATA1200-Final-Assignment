@@ -11,16 +11,17 @@
 #slogan{
     z-index: 1;
     color: var(--text-primary);
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-family: 'Pacifico', cursive;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: auto;
 }
 #slogBox{
     z-index: 1;
-    height: 450px;
+    height: 30rem;
     background-color:var(--bg-header);
     text-align: center;
     position: relative;
@@ -60,4 +61,135 @@
   'wght' 400,
   'GRAD' 200,
   'opsz' 48
+}
+.info{
+    display: flex;
+    flex-direction: row;
+}
+.boxImg {
+  border-radius: 3rem;
+  width: 50%;
+}
+.imgText{
+    color: var(--text-primary);
+    padding: 3rem;
+    width: 100%;
+    background-color: #282828d8;
+    border-radius: 3rem;
+}
+/*Code based on code from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_quotes_slideshow */
+/* Slideshow container */
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: var(--text-primary);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 1rem 1rem 0;
+  user-select: none;
+  transition: .5s ease-in-out;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 1rem 0 0 1rem;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    color: var(--text-primary);
+    background-color: var(--bg-header);
+    transition: background-color .5s ease-in-out;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+@media only screen and (max-width: 950px){
+  #slogan{
+    font-size: 2rem;
+    width: 90%;
+  }
+  .starLarge{
+    font-size: 1.5rem !important;
+  }
+  .starLarger{
+    font-size: 2rem !important;
+  }
+  #starLargest{
+    font-size: 2.5rem !important;
+  }
+  .boxImg{
+    width: 100%;
+  }
+  .imgText{
+    padding: 1.5rem;
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 350px){
+  .starLarge{
+    font-size: 1rem !important;
+  }
+  .starLarger{
+    font-size: 1.5rem !important;
+  }
+  #starLargest{
+    font-size: 2rem !important;
+  }
+  .boxImg{
+    border-radius: 1rem;
+  }
+  .imgText{
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .main{
+    padding-top: 0 rem;
+  }
 }
