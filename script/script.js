@@ -43,7 +43,7 @@ class MyFooter extends HTMLElement {
         this.innerHTML = `
             <footer>
                 <div>
-                    <p>Copyright © 2022 by CXXIII.</p>
+                    <p>Copyright © 2022 by Anchr.</p>
                     <p>Rights Reserved.</p>
                     <p>Anchr is Powered by Cloudflare.</p>
                 </div>
@@ -65,7 +65,7 @@ class MyMetadata extends HTMLElement {
             <meta charset="UTF-8">
             <meta name="description" content="DATA1200-Final-Assignment">
             <meta name="keywords" content="HTML, CSS, JavaScript">
-            <meta name="author" content="CXXIII">
+            <meta name="author" content="Anchr">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         `
     }

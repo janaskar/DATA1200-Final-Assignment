@@ -189,4 +189,8 @@ footer{
         height: 7rem;
         flex-direction: column-reverse;
     }
+    .main{
+        padding-top: 1rem;
+        min-height: 0rem;
+    }
 }
