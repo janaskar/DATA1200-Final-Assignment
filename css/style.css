@@ -8,11 +8,11 @@
     text-decoration: none;
 }
 :root{
-    --text-primary: gainsboro;
-    --text-hover: gray;
+    --text-primary: #dcdcdc;
+    --text-hover: #808080;
     --bg-header: #282828;
     --bg-nav: #303030;
-    --bg-secondary: linear-gradient(#1564DC, darkblue);
+    --bg-secondary: linear-gradient(#1564DC, #00008b);
     --bg-footer: #000030;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -138,8 +138,8 @@ footer{
     background-color: var(--text-hover);
     transition: background-color .5s ease-in-out;
 }
-/*min-width: 600px header*/
-@media only screen and (max-width: 1200px){
+/*min-width: 1200px header*/
+@media (max-width: 1200px){
     .nav-list{
         display: none;
     }
@@ -181,7 +181,7 @@ footer{
     }
 }
 /*min-width: 480px footerer*/
-@media only screen and (max-width: 480px){
+@media (max-width: 480px){
     .main{
         padding: 5rem 0rem;
     }
