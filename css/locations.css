@@ -4,6 +4,7 @@
     --info: #ff6666;
     --bg: #f0f8ff;
     --bg-btn: #808080;
+    --bg-btn-hover: #757575;
 }
 .select-nav{
     margin: auto;
@@ -53,8 +54,6 @@
     padding: 1rem;
     height: calc(100% - 6rem);
     width: calc(50% - 5rem);
-    
-    border-radius: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 5rem repeat(2, 1fr);
@@ -86,6 +85,9 @@
     padding: .5rem;
     border-radius: 0.5rem;
     background-color: var(--bg-btn);
+}
+.book-btn:hover{
+    background-color: var(--bg-btn-hover);
 }
 @media (max-width: 1200px) {
     .places{
@@ -149,12 +151,17 @@
     }
 }
 @media (max-width: 480px) {
+    .select-nav{
+        border: none;
+        border-radius: 0;
+    }
     .places{
         margin-top: -1rem;
         scroll-margin-top: 5rem;
+        border: none;
         border-top: 1px solid var(--text);
+        border-radius: 0;
     }
-
 }
 @media (max-width: 335px){
     .places *{

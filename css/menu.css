@@ -3,6 +3,8 @@
     --price: #fbdb69; 
     --info: #ff6666;
     --bg-menu: #f0f8ff;
+    --bg-btn: #808080;
+    --bg-btn-hover: #757575;
 }
 .menu{
     margin: auto;
@@ -12,7 +14,40 @@
     max-width: 60rem;
     background-color: var(--bg-menu);
 }
-.item-course{   
+.menu *{
+    color: var(--text);
+}
+#btn-menu, .menu-courses{
+    display: none;
+    height: 2.5rem;
+    user-select: none;
+}
+.menu-list *{
+    user-select: none;
+}
+.menu-list{
+    margin: 1rem auto 5rem auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-link{
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: var(--bg-btn);
+}
+.menu-link:hover{
+    background-color: var(--bg-btn-hover);
+}
+.item-course{  
+    scroll-margin-top: 5rem; 
     border-bottom: .1rem solid var(--text);
     padding-top: 1rem;
     font-size: 3rem;
@@ -23,9 +58,6 @@
 #beverages{ 
     border-top: .1rem solid var(--text);
     padding-top: 2.5rem;
-}
-.item-container *{
-    color: var(--text);
 }
 .item-container{
     margin: 1.5rem auto;
@@ -107,6 +139,52 @@
     margin: .11rem .5rem;
     color: var(--text);
 }
+@media (max-width: 1200px){
+    .item-course{
+        scroll-margin-top: 7rem;
+    }
+}
+@media (max-width: 1050px){
+    .menu-courses{
+        position: relative;
+        z-index: 1;
+        margin: 0 auto 1rem auto;
+        width: fit-content;
+        display: block;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-size: 2.5rem;
+        background-color: var(--bg-btn);
+    }
+    .menu-courses:hover{
+        background-color: var(--bg-btn-hover);
+    }
+    .menu-list{
+        display: none;
+        width: 100%;
+    }
+    #btn-menu:checked ~ .menu-courses{
+        margin: auto;
+    }
+    #btn-menu:checked ~ .menu-list{
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+        padding-top: 1rem;
+        width: 14.1rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-btn);
+    }
+    .menu-link{
+        margin: .5rem;
+        padding: .5rem;
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+    }
+}
 @media (max-width: 870px){
     .menu{
         padding: 3rem;
@@ -131,6 +209,7 @@
     }
     .item-course{   
         font-size: 2.5rem;
+
     }
     .info-icons{
         display: grid;
@@ -146,5 +225,14 @@
     .info-icon{
         margin: .75rem auto;
         margin-right: .5rem;
+    }
+}
+@media (max-width: 480px){
+    .menu{
+        border: none;
+        border-radius: 0;
+    }
+    .item-course{
+        scroll-margin-top: 5rem;
     }
 }

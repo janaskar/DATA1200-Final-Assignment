@@ -2,15 +2,22 @@
     --text: #000000;
     --bg-menu: #f0f8ff;
 }
-.booking *{
-    color: var(--text);
-}
 .booking{
     margin: auto;
     border: 1.5rem solid #282828;
     border-radius: 3rem;
     max-width: 70rem;
     background-color: var(--bg-menu);
+}
+.booking *{
+    color: var(--text);
+}
+.text{
+    margin: 5rem auto;
+    inline-size: 70%;
+    font-size: calc(1rem + 1.5vw);
+    overflow-wrap: break-word;
+    text-align: center;
 }
 .booking-form{
     margin: 5rem auto;
@@ -68,7 +75,7 @@
     .booking{
         padding: 0 1rem;
     }
-    .booking-form{
+    .booking-form, .text{
         margin: 1rem 0;
         width: 100%;
         display: flex;
@@ -81,6 +88,16 @@
     .double{
         width: auto;
         max-width: 100rem;
+    }
+}
+@media (max-width: 480px){
+    .booking{
+        border: none;
+        border-radius: 0;
+    }
+    .booking-form, .text{
+        margin: auto;
+        padding: 1rem 0;
     }
 }
 @media (max-width: 400px){
