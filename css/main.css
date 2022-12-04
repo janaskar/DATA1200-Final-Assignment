@@ -5,7 +5,7 @@
     font-size: 3rem;
     font-family: 'Pacifico', cursive;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: auto;
@@ -62,13 +62,15 @@
 .boxImg {
   border-radius: 3rem;
   width: 50%;
+  height: 32rem;
 }
 .imgText{
     color: var(--text-primary);
-    padding: 3rem;
+    padding: 4rem;
     width: 100%;
     background-color: #282828d8;
     border-radius: 3rem;
+    font-size: 4rem;
 }
 /*Code based on code from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_quotes_slideshow */
 /* Slideshow container */
@@ -176,13 +178,15 @@ body {font-family: Verdana, sans-serif; margin:0}
     font-size: 2rem !important;
   }
   .boxImg{
+    height: 5rem;
     border-radius: 1rem;
   }
   .imgText{
     padding: 1rem;
     border-radius: 1rem;
+    font-size: 1rem;
   }
   .main{
-    padding-top: 0 rem;
+    padding-top: 0;
   }
 }
