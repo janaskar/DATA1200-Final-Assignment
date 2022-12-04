@@ -126,6 +126,12 @@
         aspect-ratio: 1.2 / 2;
         flex-direction: column;
     }
+    .select-nav{
+        border: 0;
+    }
+    .places{
+        border: 0;
+    }
 }
 @media (max-width: 600px){
     .places{
