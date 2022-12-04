@@ -141,8 +141,9 @@
 }
 @media (max-width: 480px) {
     .places{
-        margin-top: 2.5rem;
+        margin-top: -1rem;
         scroll-margin-top: 5rem;
+        border-top: 1px solid var(--text);
     }
 
 }
