@@ -45,8 +45,8 @@
     margin: 2rem 1rem 2rem 2rem;
     height: calc(100% - 4rem);
     width: calc(50% - 3rem);
-    
-    border-radius: 2rem;
+    border: .05rem solid var(--text);
+    border-radius: 1rem;
 }
 .text-container{
     margin: 2rem 2rem 2rem 1rem;
@@ -101,7 +101,6 @@
         margin: 2rem 2rem 1rem 2rem;
         height: calc(55% - 3rem);
         width: calc(100% - 4rem);
-        border: .05rem dashed var(--text);
     }
     .text-container{
         margin: 1rem 2rem 2rem 2rem;
@@ -145,8 +144,9 @@
 }
 @media (max-width: 480px) {
     .places{
-        margin-top: 2.5rem;
+        margin-top: -1rem;
         scroll-margin-top: 5rem;
+        border-top: 1px solid var(--text);
     }
 
 }

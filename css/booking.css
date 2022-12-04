@@ -1,0 +1,90 @@
+:root{
+    --text: #000000;
+    --bg-menu: #f0f8ff;
+}
+.booking *{
+    color: var(--text);
+}
+.booking{
+    margin: auto;
+    border: 1.5rem solid #282828;
+    border-radius: 3rem;
+    max-width: 70rem;
+    background-color: var(--bg-menu);
+}
+.booking-form{
+    margin: 5rem auto;
+    height: fit-content;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr) 1.75fr 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0 ;
+}
+#location{
+    grid-area: 1 / 1 / 2 / 3;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../img/booking/v.svg);
+    background-color: #ffffff;
+    Background-repeat: no-repeat;
+    background-position: right .3rem center;
+    background-size: 3rem;
+}
+#email{
+    grid-area: 2 / 1 / 3 / 3;
+}
+#phone-number{
+    grid-area: 4 / 1 / 5 / 3;
+}
+#additional-information{
+    grid-area: 7 / 1 / 8 / 3;
+    height: 8rem;
+}
+#submit{
+    grid-area: 8 / 1 / 9 / 3;
+}
+.form-element{
+    margin: .5rem;
+    height: 4rem;
+    border: 1px solid var(--text);
+    padding-left: 1.25rem;
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+.form-element:nth-child(1){
+    height: 4.125rem;
+}
+.double{
+    max-width: 21.6rem;
+}
+@media (max-width: 1200px){
+    .double{
+        width: calc(50vw - 10.85rem);
+    }   
+}
+@media (max-width: 800px){
+    .booking{
+        padding: 0 1rem;
+    }
+    .booking-form{
+        margin: 1rem 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-element{
+        align-self:stretch;
+    }
+    .double{
+        width: auto;
+        max-width: 100rem;
+    }
+}
+@media (max-width: 400px){
+    .booking-form *{
+        font-size: 1.5rem;
+    } 
+}

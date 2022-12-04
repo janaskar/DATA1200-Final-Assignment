@@ -19,9 +19,6 @@ class MyHeader extends HTMLElement {
                             <a class="nav-link" href="../pages/locations.html">Locations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/catering.html">Catering</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="../pages/booking.html">Booking</a>
                         </li>
                         <li class="nav-item">

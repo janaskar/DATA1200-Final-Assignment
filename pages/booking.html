@@ -9,11 +9,33 @@
         <link rel="canonical" href="https://anchr.tk/pages/booking">
         <!--Style-->
         <my-style></my-style>
+        <link rel="stylesheet" href="../css/booking.css">
     </head>
     <body>
         <my-header></my-header>
         <section class="main">
-            Hello world!
+            <div class="booking">
+                <form class="booking-form" method="post">
+                    <select class="form-element" id="location" name="location">
+                        <option style="display:none" selected disabled>Locations</option>
+                        <option value="sesame">Sesame</option>
+                        <option value="hell">Hell</option>
+                        <option value="420">420</option>
+                        <option value="heaven">Heaven</option>
+                        <option value="end">End</option>
+                    </select>
+                    <input class="form-element" id="email" type="email" name="email" placeholder="Email" required>
+                    <input class="form-element double" id="first-name" type="text" name="first-name" placeholder="First Name" required>
+                    <input class="form-element double" id="last-name" type="text" name="last-name" placeholder="Last Name" required>
+                    <input class="form-element" id="phone-number" type="text" name="phone-number" placeholder="Phone Number" required>
+                    <input class="form-element double" id="start-time" type="time" name="start-time" placeholder="Start Time" required>
+                    <input class="form-element double" id="end-time" type="time" name="end-time" placeholder="End Time" required>
+                    <input class="form-element double" id="date" type="date" name="date" placeholder="Date" required>
+                    <input class="form-element double" id="people" type="number" name="people" placeholder="People" required min="1">
+                    <textarea class="form-element" id="additional-information" name="additional-information" placeholder="Additional Information&#10;(Not Required)"></textarea>
+                    <button class="form-element" style="cursor: pointer;" id="submit" type="submit">Done</button>
+                </form>
+            </div>
         </section>
         <my-footer></my-footer>
         <script src="../script/script.js"></script>
