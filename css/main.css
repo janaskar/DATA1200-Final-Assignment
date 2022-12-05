@@ -10,6 +10,23 @@
     transform: translate(-50%, -50%);
     width: auto;
 }
+#starBox{
+  z-index: 1;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+.starLarge{
+  font-size: 2rem !important;
+}
+.starLarger{
+  font-size: 2.5rem !important;
+}
+#starLargest{
+  font-size: 3rem !important;
+}
 #slogBox{
     z-index: 1;
     height: 30rem;   
@@ -19,34 +36,13 @@
     user-select: none;
 }
 .parallax{
-    /* The image used */
     background-image: url(../img/home/parallax.svg);
-  
-    /* Full height */
     height: 33%; 
-  
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-#starBox{
-    z-index: 1;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    user-select: none;
-}
-.starLarge{
-    font-size: 2rem !important;
-}
-.starLarger{
-    font-size: 2.5rem !important;
-}
-#starLargest{
-    font-size: 3rem !important;
 }
 .material-symbols-outlined {
   font-variation-settings:
@@ -73,26 +69,18 @@
   font-size: 2rem;
 }
 /*Code based on code from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_quotes_slideshow */
-/* Slideshow container */
 body {font-family: Verdana, sans-serif; margin:0}
-
-/* Slideshow container */
 .slideshow-container {
   position: relative;
 }
-
 .slideshow-container * {
   box-sizing: border-box;
 }
-
-/* Slides */
 .mySlides {
   display: none;
   padding: 80px;
   text-align: center;
 }
-
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -107,28 +95,20 @@ body {font-family: Verdana, sans-serif; margin:0}
   user-select: none;
   transition: .5s ease-in-out;
 }
-
-/* Position the "next button" to the right */
 .next {
   position: absolute;
   right: 0;
   border-radius: 1rem 0 0 1rem;
 }
-
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     color: var(--text-primary);
     background-color: var(--bg-header);
     transition: background-color .5s ease-in-out;
 }
-
-/* The dot/bullet/indicator container */
 .dot-container {
     text-align: center;
     padding: 20px;
 }
-
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -139,8 +119,6 @@ body {font-family: Verdana, sans-serif; margin:0}
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
-/* Add a background color to the active dot/circle */
 .active, .dot:hover {
   background-color: #717171;
 }
