@@ -9,11 +9,124 @@
         <link rel="canonical" href="https://anchr.tk/pages/accessibility">
         <!--Style-->
         <my-style></my-style>
+        <link rel="stylesheet" href="../css/accessibility.css">
     </head>
     <body>
         <my-header></my-header>
         <section class="main">
-            Hello world!
+            <div class="doc">
+                <h1>
+                    Accessibility
+                </h1>
+                    <h2>
+                        Template/Home/Index Page
+                    </h2>
+                        <p>
+                            Correct use of head, nav, and footer helps navigation for users of
+                            assistive devices. Good semantic and visual meaning and structure to the
+                            document. Head contains site name and nav. Nav section has links to the
+                            other pages. Footer has copyright date and socials.
+                        </p>
+                        <p>
+                            In html element we have use "en”, so the voice assistance know what
+                            language to use. This helps voice assistant users.
+                        </p>
+                        <p>
+                            We use &lt;ul&gt; because the list does not require an order. Assistive
+                            technologies and devices can navigate by and within lists.
+                        </p>
+                        <p>
+                            In head we have an input with two labels this will be confusing for those
+                            that use screen readers, but since we could not use JavaScript, so we chose
+                            to do it this way.
+                        </p>
+                        <p>
+                            In &lt;a&gt; element we don't have links without text which will make it
+                            difficult for screen reader users. We can fix this by adding text about the
+                            link and then hiding it so that it helps screen reader users. We just could
+                            not find out how to hide the text properly.
+                        </p>
+                        <p>
+                            We also have JavaScript device dependent event handler which can't be used
+                            by keyboard users.
+                        </p>
+                    <h2>
+                        Menu Page
+                    </h2>
+                        <p>
+                            Alt text is useful for those who use screen readers, but our img don't have
+                            that because this will just give the dish name again.
+                        </p>
+                        <p>
+                            Good use of headings this provide page navigation for users of assistive
+                            technologies. They also facilitate semantic and visual meaning and good
+                            structure in the document.
+                        </p>
+                        <p>
+                            An &lt;object&gt; element is present this causes accessibility issues. We
+                            should add HTML alternative so that voice assistant can read it.
+                        </p>
+                    <h2>
+                        Locations Page
+                    </h2>
+                        <p>
+                            Everything has good accessibly only problem is the locations nav, it has no
+                            label and uses JavaScript to jump in the page.
+                        </p>
+                    <h2>
+                        Booking Page
+                    </h2>
+                        <p>
+                            None of our input/select have labels screen reader users suffer.
+                        </p>
+                    <h2>
+                        Topical Page
+                    </h2>
+                        <p>
+                            Small text difficult for people with poor vision, it is only image text so
+                            they can use zoom function if they really want to read the text.
+                        </p>
+                    <h2>
+                        Choices
+                    </h2>
+                        <img
+                        width="225"
+                        height="420"
+                        src="../img/accessibility/pxp.png"
+                        alt="Pic of website on pixel phone"
+                        />
+                        <img
+                        width="350"
+                        height="240"
+                        src="../img/accessibility/pxcb.png"
+                        alt="Pic of website on pixel chromebook"
+                        />
+                        <p>
+                            The use of rem and not em so that we can go into the root css and change it
+                            if we wanted.
+                        </p>
+                        <p>
+                            We used lots of media queries so that we can support lots of screen sizes,
+                            we may have used it too much. We also use % instead of px or pt so that the
+                            page would be responsive. Less absolute units and more relative units.
+                            Relative units are scalable units and helps in responsive design
+                        </p>
+                        <p>
+                            We test on virtual screens as small as Samsung fold to as big 1440p.
+                        </p>
+                    <h2>
+                        Pages
+                    </h2>
+                        <p>
+                            topical.html/css, and accessibility fixes: by group member 252
+                        </p>
+                        <p>
+                            template.html/style.css, menu.html/css locations.html/css booking.html/css and accessibility.html/css: by group member 271
+                        </p>
+                        <p>
+                            index.html/home.css, help added dishes and accessibility fixes: by group member 390
+                        </p>
+            </div>
         </section>
         <my-footer></my-footer>
         <script src="../script/script.js"></script>

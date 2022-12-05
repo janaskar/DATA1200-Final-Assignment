@@ -12,12 +12,15 @@
 .booking *{
     color: var(--text);
 }
-.text{
-    margin: 5rem auto;
+.text, .title{
+    margin: 2.5rem auto;
     inline-size: 70%;
     font-size: calc(1rem + 1.5vw);
     overflow-wrap: break-word;
     text-align: center;
+}
+.title{
+    margin-top: 5rem;
 }
 .booking-form{
     margin: 5rem auto;
@@ -75,7 +78,7 @@
     .booking{
         padding: 0 1rem;
     }
-    .booking-form, .text{
+    .booking-form, .text, .title{
         margin: 1rem 0;
         width: 100%;
         display: flex;
@@ -95,7 +98,7 @@
         border: none;
         border-radius: 0;
     }
-    .booking-form, .text{
+    .booking-form, .text, .title{
         margin: auto;
         padding: 1rem 0;
     }

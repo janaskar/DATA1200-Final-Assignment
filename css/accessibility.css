@@ -1,0 +1,40 @@
+:root{
+    --text: #000000;
+    --bg-menu: #f0f8ff;
+}
+.doc{
+    margin: auto;
+    border: 1.5rem solid #282828;
+    border-radius: 3rem;
+    padding: 2rem;
+    max-width: 46.875rem;
+    background-color: var(--bg-menu);
+}
+.doc *{
+    color: var(--text);
+}
+h1{
+    margin-bottom: 1.34rem;
+    font-size: 2rem;
+}
+h2{
+    margin: 1.245rem 0;
+    font-size: 1.5rem;
+}
+p{
+    margin: 1rem 0;
+}
+img{
+    float: right;
+}
+@media (max-width: 750px) {
+    img{
+        display: none;
+    }
+}
+@media (max-width: 480px){
+    .doc{
+        border: none;
+        border-radius: 0;
+    }
+}
