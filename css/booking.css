@@ -1,13 +1,9 @@
-:root{
-    --text: #000000;
-    --bg-menu: #f0f8ff;
-}
 .booking{
     margin: auto;
     border: 1.5rem solid #282828;
     border-radius: 3rem;
     max-width: 70rem;
-    background-color: var(--bg-menu);
+    background-color: var(--bg);
 }
 .booking *{
     color: var(--text);

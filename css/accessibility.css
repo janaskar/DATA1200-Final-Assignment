@@ -1,14 +1,10 @@
-:root{
-    --text: #000000;
-    --bg-menu: #f0f8ff;
-}
 .doc{
     margin: auto;
-    border: 1.5rem solid #282828;
+    border: 1.5rem solid var(--bg-header);
     border-radius: 3rem;
     padding: 2rem;
     max-width: 46.875rem;
-    background-color: var(--bg-menu);
+    background-color: var(--bg);
 }
 .doc *{
     color: var(--text);
@@ -24,11 +20,20 @@ h2{
 p{
     margin: 1rem 0;
 }
-img{
+.img1{
+    width: calc(100% - 8rem);
+    max-width: 14rem;
+    height: auto;
     float: right;
 }
-@media (max-width: 750px) {
-    img{
+.img2{
+    width: calc(100% - 14rem);
+    max-width: 27rem;
+    height: auto;
+    float: inline-start;
+}
+@media (max-width: 600px){
+    .img2{
         display: none;
     }
 }
