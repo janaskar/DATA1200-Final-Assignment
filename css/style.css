@@ -36,6 +36,14 @@ li{
     font-family: archive;
     src: url(../fonts/archive.ttf) format("truetype");
 }
+/*Style Icon*/
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 200,
+    'opsz' 48
+  }
 /*Style Skeleton*/
 /*Style Header*/
 my-header{
@@ -91,14 +99,6 @@ header{
     color: var(--text-hover);
     transition: color .5s ease-in-out;
 }
-/*Style Icon*/
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 200,
-    'opsz' 48
-  }
 /*Style Section*/
 .main{
     padding: 12rem 7rem 15rem 7rem;
